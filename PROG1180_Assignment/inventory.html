@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>INVSYS System</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">   
+    <script src="script\Database.js"></script>
+    <script src="script\script.js"></script>
+</head>
+<body style="background-color: #fff4e6">
+  <div id="account">
+    <p id="welcome">Welcome User</p>
+    <a id="logout" href="./login.html">Logout</a>
+    <a id="create" href="./login.html#create#inventory">Create New User</a>
+    <a id="generateReport" href="./reports.html">Generate Reports</a>
+  </div>
+    <header>
+      <div class="logo">
+        <a title="INVSYS Home" class="img-anc" href="index.html">
+          <img style="margin-left: -20px;" alt="Home" src="photos\Logo-modified.png">
+        </a>
+        <p>
+          <a title="INVSYS Home" href="index.html">INVSYS</a>
+        </p>
+      </div>
+      <nav class="nav-tiles">
+        <div class="nav-ord">
+          <a title="Ordering" href="ordering.html">Ordering</a>
+        </div>
+        <div class="nav-inv">
+          <a title="Inventory" href="inventory.html">Inventory</a>
+        </div>
+        <div class="nav-sup">
+          <a title="Suppliers" href="suppliers.html">Suppliers</a>
+        </div>
+        <div class="nav-itm">
+          <a title="Items" href="items.html">Items</a>
+        </div>
+        <div class="nav-cus">
+          <a title="Customers" href="customers.html">Customers</a>
+        </div>
+        <div class="nav-sal">
+          <a title="Sales" href="sales.html">Sales</a>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="row">
+        <div class="column-inv style-table">
+          <h2>Current Inventory</h2>
+          <table border="1" id="tbInventory"></table>
+        </div>
+      </div>
+      <div class="row2" style="background-color: #fff4e6">
+        <div class="column-inv toHide input-style" style="background-color: #fff4e6">
+          <div class="commits">
+            <label id="status"></label>
+            <input onclick="AdaptInputs('btnNew')" type="submit" value="New Entry" id="btnNew" class="toHide">
+          </div>
+          <div>
+          <h2>Inventory Details</h2>
+          <!-- <div class="first-name">
+            <label for="custFirst">First Name</label>
+            <img title="Help" alt="Help" src="photos/Help.png">
+            <input type="text" id="custFirst" name="custFirst">
+          </div> -->
+          <div class="upc" style="position: relative;">
+            <label for="upc">UPC</label>
+            <img onclick="ToggleHelp('upc-help')" title="Help" alt="Help" src="photos/Help.png">
+            <input type="text" id="upc" name="upc" placeholder='ex: 123456789012' disabled="disabled">
+          </div>
+          <div id="upc-help" style="display: none;" class="upc-help help">
+            <p>Please provide the 12-digit UPC code for the item. <br>
+               Only numbers may be included.</p>
+          </div>
+          <br>
+          <div style="position: relative;">
+            <label for="date">DateRecieved</label>
+            <img onclick="ToggleHelp('date-received-help')" title="Help" alt="Help" src="photos/Help.png">
+            <input type="date" id="date" name="date" disabled="disabled">
+          </div>
+          <div id="date-received-help" style="display: none;" class="date-received-help help">
+            <p>Please use the date picker to select the date on <br> which the item was/is being received. </p>
+          </div>
+          <br>
+          <div style="position: relative;">
+            <label for="quan">Quanitity</label>
+            <img onclick="ToggleHelp('quantity-help')" title="Help" alt="Help" src="photos/Help.png">
+            <input type="text" id="quan" name="quan" placeholder='ex: 13' disabled="disabled">
+          </div>
+          <div id="quantity-help" style="display: none;" class="quantity-help help">
+            <p>Please provide the quantity of item received.<br>
+               Only numbers may be included. </p>
+          </div>
+          <br>
+          <div style="position: relative;">
+            <label for="cost">Cost</label>
+            <img onclick="ToggleHelp('cost-help')" title="Help" alt="Help" src="photos/Help.png">
+            <input type="text" id="cost" name="cost" placeholder='ex: 14.5' disabled="disabled">
+          </div>
+          <div id="cost-help" style="display: none;" class="cost-help help">
+            <p>Please provide the per-item cost at which this item was purchased. <br>
+               Only numbers may be provided with up to one decimal point.
+            </p>
+          </div>
+          <br>
+          <div class="commits">
+            <input style="display: none;" type="submit" value="Commit Changes" id="btnSubmit" class="toHide">
+            <input onclick="EmptyStatus();" style="display: none;" type="submit" value="Clear Fields" id="btnClear" class="toHide">
+          </div>  
+        </div>
+        </div>
+      </div>
+    </div>
+    <footer> PROG1180 ComicSans INVSYS </footer>
+  </body>
+</html>

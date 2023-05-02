@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>INVSYS System</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">   
+    <script src="script\Database.js"></script>
+    <script src="script\script.js"></script>
+</head>
+<body style="background-color: #fff4e6">
+  <div id="account">
+    <p id="welcome">Welcome User</p>
+    <a id="logout" href="./login.html">Logout</a>
+    <a id="create" href="./login.html#create#customers">Create New User</a>
+    <a id="generateReport" href="./reports.html">Generate Reports</a>
+  </div>
+    <header>
+      <div class="logo">
+        <a title="INVSYS Home" class="img-anc" href="index.html">
+          <img style="margin-left: -20px;" alt="Home" src="photos\Logo-modified.png">
+        </a>
+        <p>
+          <a title="INVSYS Home" href="index.html">INVSYS</a>
+        </p>
+      </div>
+      <nav class="nav-tiles">
+        <div class="nav-ord">
+          <a title="Ordering" href="ordering.html">Ordering</a>
+        </div>
+        <div class="nav-inv">
+          <a title="Inventory" href="inventory.html">Inventory</a>
+        </div>
+        <div class="nav-sup">
+          <a title="Suppliers" href="suppliers.html">Suppliers</a>
+        </div>
+        <div class="nav-itm">
+          <a title="Items" href="items.html">Items</a>
+        </div>
+        <div class="nav-cus">
+          <a title="Customers" href="customers.html">Customers</a>
+        </div>
+        <div class="nav-sal">
+          <a title="Sales" href="sales.html">Sales</a>
+        </div>
+      </nav>
+    </header>
+<div class="main">
+    <div class="row">
+        <div class="column-inv style-table">
+            <h2>Current Items</h2>
+            <table border="1" id="tbInventory">
+            </table>
+        </div>
+    </div>
+    <div class="row2" style="background-color: #fff4e6">
+        <div class="column-inv input-style" style="background-color: #fff4e6">
+          <div class="commits">
+            <label id="status"></label>
+            <input onclick="AdaptInputs('btnNew')" type="submit" value="New Entry" id="btnNew">
+          </div>
+            <h2>Item Details</h2>
+            <div style="position: relative;">
+                <label for="upc">UPC</label>
+                <img onclick="ToggleHelp('upc-help')" title="Help" alt="Help" src="photos/Help.png">
+                <input type="text" id="upc" name="upc" placeholder='ex: 123456789012' disabled>
+            </div>
+            <div id="upc-help" style="display: none;" class="help">
+                <p>Please provide the 12-digit UPC code for the item. <br>
+                   Only numbers may be included.</p>
+            </div>
+            <br>
+            <div style="position: relative;">
+                <label for="status">Carried</label>
+                <img onclick="ToggleHelp('carried-help')" title="Help" alt="Help" src="photos/Help.png">
+                <input type="checkbox" id="status" name="status"disabled>
+            </div>
+            <div id="carried-help" style="display: none;" class="help">
+                <p>Please indicate whether the item is currently maintained in inventory.<br>
+                   A checked box indicates the item is maintained in inventory.</p>
+            </div>
+            <br>
+            <div style="position: relative;">
+                <label for="pname">Product Name</label>
+                <img onclick="ToggleHelp('product-name-help')" title="Help" alt="Help" src="photos/Help.png">
+                <input type="text" id="pname" name="pname" placeholder='ex: Screw'disabled>
+            </div>
+            <div id="product-name-help" style="display: none;" class="help">
+                <p>Please provide the product name.<br>
+                   Maximum length is 30 characters.</p>
+            </div>
+            <br>
+            <div style="position: relative;">
+                <label for="itemdesc">Item Description</label>
+                <img onclick="ToggleHelp('description-help')" title="Help" alt="Help" src="photos/Help.png">
+                <input type="text" id="itemdesc" name="itemdesc" placeholder='ex: 12-Inch Robertson Head'disabled>
+            </div>
+            <div id="description-help" style="display: none;" class="help">
+                <p>Please provide a description of the item.<br>
+                   Maximum length is 100 characters.</p>
+            </div>
+            <br>
+            <div style="position: relative;">
+                <label for="manfactid">Supplier</label>
+                <img onclick="ToggleHelp('supplier-help')" title="Help" alt="Help" src="photos/Help.png">
+                <!-- Will be a dropdown -->
+                <input type="text" id="manfactid" name="manfactid" placeholder='ex: BladeMen Inc.'disabled>
+            </div>
+            <div id="supplier-help" style="display: none;" class="help">
+                <p>Please provide the name of the item's supplier.</p>
+            </div>
+            <br>
+            <div style="position: relative;">
+                <label for="serialnum">Serial Number</label>
+                <img onclick="ToggleHelp('serial-number-help')" title="Help" alt="Help" src="photos/Help.png">
+                <input type="text" id="serialnum" name="serialnum" placeholder='ex: 1000'disabled>
+            </div>
+            <div id="serial-number-help" style="display: none;" class="help">
+                <p>Please provide the serial number for the item.<br>
+                   Only letters and number are allowed in the serial number.</p>
+            </div>
+            <br>
+            <div class="commits">
+              <input style="display: none;" type="submit" value="Commit Changes" id="btnSubmit" class="toHide">
+              <input onclick="EmptyStatus();" style="display: none;" type="submit" value="Clear Fields" id="btnClear" class="toHide">
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    PROG1180 ComicSans INVSYS 
+ </footer>
+</body>
+</html>

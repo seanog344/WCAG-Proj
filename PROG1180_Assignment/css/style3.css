@@ -1,0 +1,609 @@
+/*Original CSS*/
+.cust-info h2{
+	float: center;
+}
+.cust-info input[type=checkbox]{
+	transform: scale(1.75);
+	margin: 15px;
+}
+
+td > input{
+	background-color:#d4d4d4;
+}
+
+th > input{
+	background-color: #be9b7b;
+}
+
+
+.cust-info input[type=text]{
+	margin: 10px 30px 10px 10px;
+	
+}
+table.report > tbody > tr > td{
+	font-size: 22px;
+	min-width: 200px;
+}
+table.report > tbody > th{
+	background-color: whitesmoke;
+}
+table.report > tbody > tr{
+	height: 75px;
+}
+
+.report{
+	margin-top: 20px;
+	border: 5px solid black;
+	width: 100%;
+	padding: 5px;
+}
+/* .column for print preview page */
+.column {
+	margin-left: 50px;
+	width: 25%;
+  }
+
+.column-inv{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center; 
+}
+.column-inv h2{
+	font-size: 30px;
+}
+
+.input-style label, input{
+	font-size: 30px;
+	margin:10px;
+}
+
+.input-style form{
+	background-color: #be9b7b ;
+	border-style: solid;
+	border-width: 5px;
+	margin:auto;
+	float: center;
+	width: 75%;
+
+}
+.input-style input[type="text"]{
+	margin:5px;
+	width: 50%;
+	align-content: right;
+}
+.input-style input[type="date"]{
+	margin:5px;
+	width: 50%;
+	align-content: right;
+	border-style: solid;
+    border-width: 5px;
+	padding: 1px, 2px;
+}
+.input-style input[type="checkbox"]{
+	transform: scale(2);
+	margin: 15px;
+}
+.input-style h2{
+	margin: auto;
+	width: 25%;
+}
+.logo .img-anc{
+	float:left;
+	width: 100px;
+}
+.logo p{
+	float: left;
+	font-size: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	margin-top: 60px;
+	
+}
+.row-print:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row::after{
+	clear:both;
+	content:"";
+	display: table;
+	
+}
+.order-details{
+	font-size: 30px;
+}
+/*Style Print Preview Page*/
+#altcode{
+	float: left;
+	padding-left: 10%;
+}
+
+.print-preview{
+	float:left;
+	margin: 50px;
+	margin-left: 25px;
+	width: 80%;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+
+
+.print-preview h2{
+	background-color: #a5644e;
+	color: white;
+	height:40px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border: 2px solid black;
+}
+
+.row-print .column{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
+
+.print-preview h1{
+	display:flex;
+	justify-content: flex-end;
+	padding-right: 10%;
+	padding-top: 10px;
+}
+.print-preview p{
+	font-size: 18px;
+}
+/* .print-preview table{
+	width: 55%;
+} */
+.print-preview td{
+	text-align: center;
+	height: 30px;
+}
+.print-preview th{
+	background-color: #a5644e;
+	color:white;
+	font-size: 20px;
+	max-width: 50%;
+	text-align: center;
+}
+.print-preview tr:nth-of-type(even){
+	background-color: #eddfda;
+}
+.row-print{
+	display:flex;
+	width: 100%;
+}
+.row{
+	display: flex;
+	height: auto;
+	margin: auto;
+	margin-left:0px;
+	width: 60%;
+	padding: 10px;
+	padding-left: 0px;
+}
+.row2{
+	/* display: hidden; */
+	background-color: #fff4e6;
+	width:40%;
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.row2 > div{
+	background-color: #fff4e6;
+	position: sticky;
+	top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.style-table{
+	
+	background-color: beige;
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	width:100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tiles a{
+	padding: 80px 25px 0px 25px
+}
+
+.tiles img{
+	
+	max-width: 100px;
+	max-height: 100px;
+	margin-top: 35px;
+
+}
+
+.tiles {
+	width: 300px;
+	padding: 10px;
+	margin: auto;
+	height: 250px;
+	font-size: 30px;
+	text-align: center;
+	border: 3px solid black;
+} 
+
+.box{
+	border-style: solid;
+    padding:20px;
+	margin: 50px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:Lucida Console;
+  }
+.box a{
+	width:150px
+}
+
+/* .container{
+	box-sizing: border-box;
+	margin: auto;
+	width:50%;
+	display:grid;
+	grid-template-columns: 400px 400px;
+	grid-row: auto auto;
+	grid-column-gap: 300px;
+	grid-row-gap: 40px;
+} */
+
+.home-tiles img{
+	height: 150;
+	width: 150px;
+}
+
+
+
+
+.main{
+	display: flex;
+	width: 100%;
+}
+
+/* .toHide{
+	display:none;
+} */
+
+a:hover{
+	background-color: yellow;
+	
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:visited{
+	color: #000;
+	text-decoration: none;
+}
+
+a{
+	font-size: 35px;
+	padding: 0px 25px 0px 25px;
+	color:#000;
+	width: 50px;
+	
+}
+
+
+h1{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: lighter;
+	text-align: center;
+
+}
+header{
+	background-color: #be9b7b ;
+	color: #000;
+	height: auto;
+	height: 150px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+body{
+	display: block;
+	background-color: #fff4e6 ;
+	margin:auto;
+	width:90%;
+}
+form{
+	font-size: 25px;
+}
+input, select{
+	font-size: 25px;
+}
+input:hover, select:hover{
+	background-color: yellow;
+}
+input[type="submit"], select{
+	margin: 10px;
+}
+input[type="text"], select, input[type="date"]{
+	border-style: solid;
+	border-width: 5px;
+}
+footer{
+	text-align: center;
+}
+
+th{
+	background-color: #be9b7b;
+	font-size: 30px;
+	text-align: left;
+}
+td{
+	font-size: 25px;
+	height: auto;
+	width: auto;
+
+}
+
+tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+tr:hover{
+	background-color: #00bfff;
+}
+
+td, th{
+	padding:12px 15px
+}
+
+nav{
+	margin: auto;
+	font-family:Lucida Console;
+	font-weight: 300;
+	width: 50%;
+}
+
+
+.edit{
+	margin: 2px;
+	width: 130px;
+}
+.delete{
+	margin: 2px;
+	width: 130px;
+}
+
+
+.sticky{
+	background: green;
+  	color: white;
+  	margin: 15em 0.6em 1em;
+  	padding: 0.3em;
+  	min-height: 12em;
+  	position: sticky;
+  	top: 12em;
+  /* Where it stops */
+}
+
+/*******************
+* Alex's Additions *
+*******************/
+
+/*Nav Bar Grid Stuff*/
+.nav-ord {grid-area: nav-ord;}
+.nav-inv {grid-area: nav-inv;}
+.nav-sup {grid-area: nav-sup;}
+.nav-itm {grid-area: nav-itm;}
+.nav-cus {grid-area: nav-cus;}
+.nav-sal {grid-area: nav-sal;}
+
+.nav-ord, .nav-inv, .nav-sup, .nav-itm, .nav-cus, .nav-sal {
+	width: 250px;
+}
+
+.nav-ord, .nav-inv, .nav-sup {
+	padding-bottom: 10px;
+}
+
+
+.nav-tiles {
+	height: 90px;
+	margin-top: 30px;
+	text-align: center;
+	display: grid;
+	grid-template-areas: 
+		'nav-ord nav-inv nav-sup'
+		'nav-itm nav-cus nav-sal';
+}
+
+h1 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*This makes the nav bar centering ignore the logo*/
+.logo {
+	position: absolute;
+}
+
+/*Home Page Grid Stuff*/
+.home-ord {grid-area: home-ord;}
+.home-inv {grid-area: home-inv;}
+.home-sup {grid-area: home-sup;}
+.home-itm {grid-area: home-itm;}
+.home-cus {grid-area: home-cus;}
+.home-sal {grid-area: home-sal;}
+
+.home-ord, .home-inv, .home-sup, .home-itm, .home-cus, .home-sal {
+	width: 250px;
+}
+
+.home-ord, .home-inv, .home-sup {
+	padding-bottom: 10px;
+}
+
+.home-tiles {
+	margin: auto;
+	text-align: center;
+	display: grid;
+	grid-template-areas: 
+		'home-ord home-inv home-sup'
+		'home-itm home-cus home-sal';
+	width: 80%;
+}
+
+.box {margin: 50px 50px 0px 50px;}
+
+footer {margin: 50px;}
+
+.column-inv {
+	margin: 0;
+	float:right;
+	width: auto;
+}
+
+input {
+	font-size: 15pt;
+	margin: 0;
+}
+
+td {
+	font-size: 15pt;
+	padding: 0px 10px;
+}
+th {
+	width: 100%;
+	padding: 10px;	
+}
+
+table input[type="submit"] { 
+	margin: 0;
+	min-width: 100%;
+}
+
+.column-inv input {
+	float: right;
+	width: 50%;}
+
+.commits input[type="submit"] {
+	min-width: none;
+	float: none;
+	width: 50%;
+}
+
+.row {width: 70%;}
+
+.row2 img {
+	height: 15pt;
+	width: 15pt;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.input-style label, input {
+	margin: 0;
+    font-size: 18pt;
+}
+
+.help {font-style: italic;}
+
+
+/* Nic's Additions  */
+
+.autocomplete {
+	/*the container must be positioned relative:*/
+	position: relative;
+	display: inline-block;
+}
+  
+.autocomplete-items {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	/*position the autocomplete items to be the same width as the container:*/
+	top: 100%;
+	left: 11.7rem;
+	right: 0;
+}
+.autocomplete-items div {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+	/*when hovering an item:*/
+	background-color: #e9e9e9;
+} 
+.autocomplete-active {
+	/*when navigating through the items using the arrow keys:*/
+	background-color: DodgerBlue !important;
+	color: #ffffff;
+}  
+
+#account{
+	background-color: #be9b7b;
+	padding: 0;
+}
+
+#welcome{
+	float: left;
+	font-size: small;
+	margin:13px 0px;
+	padding-left: 15px;
+}
+
+
+
+#logout{
+	float: right;
+	font-size:small;
+	margin:13px 0px;
+	padding:0px;
+	text-align: center;
+}
+
+#create{
+	float: right;
+	font-size:small;
+	margin:13px 0px;
+	padding:0px;
+	text-align: center;
+	width: 100px;
+}
+
+#generateReport{
+	float: right;
+	font-size:small;
+	margin:13px 0px;
+	padding:0px;
+	text-align: center;
+	width: 100px;
+}
+/*******************
+* Sea's Additions *
+*******************/
+
+.nav-ord, .nav-inv, .nav-sup, .nav-itm, .nav-cus, .nav-sal {
+	border-style: solid;
+    	padding: 5px;
+    	border-radius: 10px;
+}
+.nav-tiles {
+	grid-gap: 5px;
+}
+
+/* .print-preview p, .print-preview th, .print-preview td{
+	font-size: 25px;
+} */
